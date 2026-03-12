@@ -71,6 +71,9 @@ updateTicketTime();
 function startClickedAnimation(){
     clickIndicator.style.opacity = 0.2;
     clickIndicator.style.width = "97%";
+    setTimeout(() => {
+        clickIndicator.style.transition = "0s";
+    }, 100);
 }
 
 chatSelector.addEventListener("click", () => {
@@ -101,6 +104,7 @@ goBack.addEventListener("click", () => {
         prevValidTicket.style.opacity = 0;
         fakeTime0.style.opacity = 0;
         fakeTime1.style.opacity = 0;
+        clickIndicator.style.transition = "0.2s";
     }, 50);
 });
 
@@ -116,6 +120,7 @@ goBack2.addEventListener("click", () => {
         prevValidTicket.style.opacity = 0;
         fakeTime0.style.opacity = 0;
         fakeTime1.style.opacity = 0;
+        clickIndicator.style.transition = "0.2s";
     }, 50);
 });
 
