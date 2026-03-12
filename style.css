@@ -3,12 +3,46 @@ body{
     margin: 0;
 }
 
+#validTicket{
+    position: absolute;
+    color: #d6d6d6; /*#d6d6d6*/
+    font-size: 18px;
+    line-height: 1.47;
+    letter-spacing: -0px;
+    font-family: "Roboto";
+    z-index: 3;
+    top: 591px;
+    left: 24px;
+    font-weight: 350;
+    filter: blur(0.2px);
+    background-color: #1f2022;
+    padding-left: 2px;
+    opacity: 0;
+    text-underline-offset: 2px;
+}
+
+.time {
+    text-decoration: underline;
+    text-decoration-thickness: 1.4px;
+    text-underline-offset: 2px;
+}
+
 #goBack{
     position: absolute;
     width: 100px;
     height: 100px;
     top: 0;
     left: 0;
+    z-index: 2;
+    display: none;
+}
+
+#goBack2{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    right: 0;
     z-index: 2;
     display: none;
 }
