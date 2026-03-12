@@ -8,6 +8,9 @@ let goBack2 = document.getElementById("goBack2");
 let validTicket = document.getElementById("validTicket");
 let prevValidTicket = document.getElementById("previousValidTicket");
 
+let fakeTime0 = document.getElementById("fakeTime0");
+let fakeTime1 = document.getElementById("fakeTime1");
+
 function updateTicketTime() {
 
     const now = new Date();
@@ -53,6 +56,14 @@ function updateTicketTime() {
         <span class="time">14:58</span>&nbsp;hod. <br>
         QOSsxMeB
     `;
+
+    const textSendTime = new Date(now.getTime() - 6 * 60 * 1000);
+
+    const textSendTimeH = String(textSendTime.getHours()).padStart(2,'0');
+    const textSendTimeM = String(textSendTime.getMinutes()).padStart(2,'0');
+
+    document.getElementById("fakeTime0").innerHTML = `${textSendTimeH}:${textSendTimeM}`;
+    document.getElementById("fakeTime1").innerHTML = `${textSendTimeH}:${textSendTimeM}`;
 }
 
 updateTicketTime();
@@ -73,6 +84,8 @@ chatSelector.addEventListener("click", () => {
         intro.src = "chat.jpg";
         validTicket.style.opacity = 1;
         prevValidTicket.style.opacity = 1;
+        fakeTime0.style.opacity = 1;
+        fakeTime1.style.opacity = 1;
     }, 200);
 });
 
@@ -86,6 +99,8 @@ goBack.addEventListener("click", () => {
         intro.src = "intro.jpg";
         validTicket.style.opacity = 0;
         prevValidTicket.style.opacity = 0;
+        fakeTime0.style.opacity = 0;
+        fakeTime1.style.opacity = 0;
     }, 50);
 });
 
@@ -99,6 +114,8 @@ goBack2.addEventListener("click", () => {
         intro.src = "intro.jpg";
         validTicket.style.opacity = 0;
         prevValidTicket.style.opacity = 0;
+        fakeTime0.style.opacity = 0;
+        fakeTime1.style.opacity = 0;
     }, 50);
 });
 

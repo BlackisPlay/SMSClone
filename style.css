@@ -108,7 +108,27 @@ body{
     height: 100px;
     bottom: 40%;
     transition: 0.2s;
-    z-index: 1;
-
+    z-index: 5;
 }
 
+#fakeTime0,#faketime1{
+    z-index: 4;
+    position: absolute;
+    color: #bbbfc2;
+    font-family: "Roboto";
+    font-size: 13px;
+    background-color: #131416;
+    padding: 3px;
+    opacity: 0;
+}
+
+#fakeTime0{
+    bottom: 330px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#fakeTime1{
+    bottom: 70px;
+    left: 20px;
+}
