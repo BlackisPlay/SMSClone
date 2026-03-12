@@ -3,6 +3,14 @@ body{
     margin: 0;
 }
 
+#goFullscreen{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    z-index: 3;
+}
+
 #statsHider{
     position: absolute;
     width: 100%;
