@@ -11,7 +11,25 @@ body{
     letter-spacing: -0px;
     font-family: "Roboto";
     z-index: 3;
-    bottom: 140px;
+    bottom: 138px;
+    left: 22px;
+    font-weight: 350;
+    filter: blur(0.2px);
+    background-color: #1f2022;
+    padding-left: 2px;
+    opacity: 0;
+    text-underline-offset: 2px;
+}
+
+#previousValidTicket{
+    position: absolute;
+    color: #d6d6d6; /*#d6d6d6*/
+    font-size: 17px;
+    line-height: 1.47;
+    letter-spacing: -0px;
+    font-family: "Roboto";
+    z-index: 3;
+    bottom: 422px;
     left: 22px;
     font-weight: 350;
     filter: blur(0.2px);
@@ -76,7 +94,7 @@ body{
     width: 100%;
     height: 100px;
     bottom: 40%;
-    z-index: 2;
+    z-index: 3;
 }
 
 #clickIndicator{

@@ -6,6 +6,7 @@ let statsHider = document.getElementById("statsHider");
 let goBack = document.getElementById("goBack");
 let goBack2 = document.getElementById("goBack2");
 let validTicket = document.getElementById("validTicket");
+let prevValidTicket = document.getElementById("previousValidTicket");
 
 function updateTicketTime() {
 
@@ -27,6 +28,14 @@ function updateTicketTime() {
     const endH = String(end.getHours()).padStart(2,'0');
     const endM = String(end.getMinutes()).padStart(2,'0');
 
+    // yesterday date
+    const yesterday = new Date(now);
+    yesterday.setDate(yesterday.getDate() - 1);
+
+    const yDay = String(yesterday.getDate()).padStart(2,'0');
+    const yMonth = String(yesterday.getMonth() + 1).padStart(2,'0');
+    const yYear = yesterday.getFullYear();
+
     document.getElementById("validTicket").innerHTML = `
         DPMK,&nbsp;a.s.<br>
         SMS&nbsp;prestupny&nbsp;CL&nbsp;1.50&nbsp;EUR.<br>
@@ -34,6 +43,15 @@ function updateTicketTime() {
         ${startH}:${startM}</span>&nbsp;do<br>
         <span class="time">${endH}:${endM}</span>&nbsp;hod. <br>
         dQhZwowF
+    `;
+
+    document.getElementById("previousValidTicket").innerHTML = `
+        DPMK,&nbsp;a.s.<br>
+        SMS&nbsp;prestupny&nbsp;CL&nbsp;1.50&nbsp;EUR.<br>
+        Platnost&nbsp;od&nbsp;<span class="time">${yDay}.${yMonth}.${yYear}&nbsp; 
+        13:58</span>&nbsp;do<br>
+        <span class="time">14:58</span>&nbsp;hod. <br>
+        QOSsxMeB
     `;
 }
 
@@ -54,6 +72,7 @@ chatSelector.addEventListener("click", () => {
         goBack2.style.display = "block";
         intro.src = "chat.jpg";
         validTicket.style.opacity = 1;
+        prevValidTicket.style.opacity = 1;
     }, 200);
 });
 
@@ -66,6 +85,7 @@ goBack.addEventListener("click", () => {
         clickIndicator.style.width = "10%";
         intro.src = "intro.jpg";
         validTicket.style.opacity = 0;
+        prevValidTicket.style.opacity = 0;
     }, 50);
 });
 
@@ -78,6 +98,7 @@ goBack2.addEventListener("click", () => {
         clickIndicator.style.width = "10%";
         intro.src = "intro.jpg";
         validTicket.style.opacity = 0;
+        prevValidTicket.style.opacity = 0;
     }, 50);
 });
 
