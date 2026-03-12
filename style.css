@@ -106,7 +106,7 @@ body{
     transform: translateX(-50%);
     width: 10%;
     height: 90px;
-    bottom: 38%;
+    bottom: 41%;
     transition: 0.2s;
     z-index: 5;
 }
@@ -129,6 +129,6 @@ body{
 }
 
 #fakeTime1{
-    bottom: 114px;
-    left: 44px;
+    bottom: 113px;
+    left: 43px;
 }
