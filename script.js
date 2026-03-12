@@ -28,6 +28,7 @@ goBack.addEventListener("click", () => {
         goBack.style.display = "none";
         clickIndicator.style.width = "10%";
         intro.src = "intro.jpg";
-    }, 200);
+    }, 50);
 });
+
 
