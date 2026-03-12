@@ -94,7 +94,7 @@ body{
     width: 100%;
     height: 100px;
     bottom: 40%;
-    z-index: 3;
+    z-index: 6;
 }
 
 #clickIndicator{
@@ -106,7 +106,7 @@ body{
     transform: translateX(-50%);
     width: 10%;
     height: 90px;
-    bottom: 41%;
+    bottom: 40%;
     transition: 0.2s;
     z-index: 5;
 }
