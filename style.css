@@ -105,8 +105,8 @@ body{
     left: 50%;
     transform: translateX(-50%);
     width: 10%;
-    height: 100px;
-    bottom: 40%;
+    height: 90px;
+    bottom: 35%;
     transition: 0.2s;
     z-index: 5;
 }
@@ -128,7 +128,7 @@ body{
     bottom: 343px;
 }
 
-#fakeTime0{
+#fakeTime1{
     bottom: 118px;
     left: 44px;
 }
