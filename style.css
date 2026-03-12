@@ -111,10 +111,12 @@ body{
     z-index: 5;
 }
 
-#fakeTime0,#faketime1{
+#fakeTime0,#fakeTime1{
     z-index: 4;
     position: absolute;
-    color: #bbbfc2;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #a0a2a7;
     font-family: "Roboto";
     font-size: 13px;
     background-color: #131416;
@@ -123,12 +125,10 @@ body{
 }
 
 #fakeTime0{
-    bottom: 330px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 343px;
 }
 
-#fakeTime1{
-    bottom: 70px;
-    left: 20px;
+#fakeTime0{
+    bottom: 118px;
+    left: 44px;
 }
