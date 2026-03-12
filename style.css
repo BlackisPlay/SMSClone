@@ -29,7 +29,7 @@ body{
     letter-spacing: -0px;
     font-family: "Roboto";
     z-index: 3;
-    bottom: 399px;
+    bottom: 397px;
     left: 22px;
     font-weight: 350;
     filter: blur(0.2px);
@@ -111,3 +111,4 @@ body{
     z-index: 1;
 
 }
+
