@@ -16,7 +16,7 @@ function updateTicketTime() {
     const now = new Date();
 
     // start time = 5 minutes ago
-    const start = new Date(now.getTime() - 5 * 60 * 1000);
+    const start = new Date(now.getTime() - 10 * 60 * 1000);
 
     // end time = 1 hour after start
     const end = new Date(start.getTime() + 60 * 60 * 1000);
@@ -57,7 +57,7 @@ function updateTicketTime() {
         QOSsxMeB
     `;
 
-    const textSendTime = new Date(now.getTime() - 6 * 60 * 1000);
+    const textSendTime = new Date(now.getTime() - 11 * 60 * 1000);
 
     const textSendTimeH = String(textSendTime.getHours()).padStart(2,'0');
     const textSendTimeM = String(textSendTime.getMinutes()).padStart(2,'0');
